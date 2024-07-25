@@ -1,4 +1,15 @@
 /* src/styles/Home.css */
-.fondo {
-  background: #1c1c1c;
+.Home {
+  
+}
+
+.carouselUp {
+  display: flex;
+ width:2000px;
+ aspect-ratio: 16/9;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+  
 }
