@@ -8,6 +8,8 @@ function Presentacion() {
   return (
     <div className="imagenequipo">
      <h2>Acto cero</h2>
+     <div></div>
+     <br />
      <div >
       <img src={miembros} alt="" />
      </div>
