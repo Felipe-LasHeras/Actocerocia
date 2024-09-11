@@ -16,13 +16,13 @@ function Home() {
       >
         <div className="carousel-inner carouselUp">
           <div className="carousel-item active">
-            <img src={cocina1} className="carouselUp d-block w-100 l-100" alt="..." />
+            <img src={cocina1} className="carouselUp d-flex w-60 l-60" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={cocina2} className="carouselUp d-block w-100" alt="..." />
+            <img src={cocina2} className="carouselUp d-flex w-60" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={cocina3} className="carouselUp d-block w-100" alt="..." />
+            <img src={cocina3} className="carouselUp d-flex w-60" alt="..." />
           </div>
         </div>
         <button

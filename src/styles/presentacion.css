@@ -1,8 +1,4 @@
-.imagenequipo {
-  display: flex;
-  width:2000px;
-  aspect-ratio: 16/9;
-   margin: 0 auto;
-   overflow: hidden;
-   border-radius: 10px;
+.presentacion
+ {
+  background: black;
 }

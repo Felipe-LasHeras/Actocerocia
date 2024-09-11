@@ -1,14 +1,15 @@
 import React from "react";
-import logo from "../assets/logo/Logo_ActoCero_en_blanco__1__page-0001-removebg-preview.png";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo/Logo_ActoCero_en_blanco__1__page-0001-removebg-preview.png";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        {/* Logo alineado a la izquierda */}
+        <Link className="navbar-brand" to="/">
           <img src={logo} alt="Actocero" style={{ height: '100%', maxHeight: '60px' }} />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,32 +21,29 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        
+        {/* Aquí se aplica 'ms-auto' para alinear los enlaces a la derecha */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/Presentacion">
-                Actocero 
+              <Link className="nav-link text-white" to="/presentacion">
+                Actocero
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/integrantes">
                 Integrantes
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/obras">
                 Obras
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#">
-                Obras
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/contacto">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
