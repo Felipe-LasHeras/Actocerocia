@@ -6,7 +6,7 @@ import "../../styles/index.css";
 
 const Biografia = () => {
   return (
-    <div className="container mt-5 fondo">
+    <div className="container mt-5 text-whitefondo ">
       <div className="row">
         {/* Columna de texto */}
         <div className="col-md-8">
