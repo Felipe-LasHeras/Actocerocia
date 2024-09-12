@@ -11,7 +11,7 @@ const Biografia = () => {
         {/* Columna de texto */}
         <div className="col-md-8">
           <h1>Sofía Riveros Córdova</h1>
-          <p className="text-muted"><i>Bailarina y coreógrafa</i></p>
+          <p className="text-white"><i>Bailarina y coreógrafa</i></p>
           <p>1997, Santiago de Chile</p>
           <p>
           Licenciada en Danza con mención en Coreografía en la Universidad Academia de Humanismo Cristiano (2021). Cuenta con estudios de ballet clásico y danzas de carácter certificados por la Royal Academy of Dance de Londres.

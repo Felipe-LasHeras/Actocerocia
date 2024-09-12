@@ -11,7 +11,7 @@ const Biografia = () => {
         {/* Columna de texto */}
         <div className="col-md-8">
           <h1>Vicente Larroulet Philippi</h1>
-          <p className="text-muted"><i>Compositor</i></p>
+          <p className="text-white"><i>Compositor</i></p>
           <p>1995, Santiago de Chile</p>
           <p>
             Vicente Larroulet Philippi se desenvolvió tempranamente en el mundo
