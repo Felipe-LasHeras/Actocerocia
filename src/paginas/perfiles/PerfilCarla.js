@@ -10,8 +10,8 @@ const Biografia = () => {
       <div className="row">
         {/* Columna de texto */}
         <div className="col-md-8">
-          <h1>Sofía Riveros Córdova</h1>
-          <p className=" text-white"><i>Bailarina y coreógrafa</i></p>
+          <h1>Carla Jiménez Ulloa </h1>
+          <p className=" text-white"><i>Actriz</i></p>
           <p>1997, Santiago de Chile
           </p>
           <p>
