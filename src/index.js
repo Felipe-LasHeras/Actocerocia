@@ -7,6 +7,7 @@
  import { BrowserRouter, Routes, Route } from 'react-router-dom';
  import Home from './paginas/home';
  import Presentacion from './paginas/presentacion';
+ import Integrantes from './paginas/integrantes';
  import Navbar from './components/navbar';
 
 
@@ -19,6 +20,8 @@
        <Route path="/" element={<App />} />
        <Route path="home" element={<Home />} />
        <Route path="presentacion" element={<Presentacion />} />
+        <Route path="integrantes" element={<Integrantes />} />
+
      </Routes>
    </BrowserRouter>
 );
