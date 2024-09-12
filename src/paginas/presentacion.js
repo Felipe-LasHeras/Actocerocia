@@ -2,10 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import miembros from "../assets/fotosMiembros/foto acto cero (1).jpg";
 import "../styles/presentacion.css";
+import "../styles/index.css";
 
 function Presentacion() {
   return (
-    <div className="presentacion">
+    <div className="presentacion fondo">
       <div className="container">
         {/* Fila del título */}
         <div className="row mb-0">

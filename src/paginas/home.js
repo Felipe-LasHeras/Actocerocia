@@ -5,13 +5,14 @@ import cocina1 from "../assets/fotosCocina/lacocina1.jpg";
 import cocina2 from "../assets/fotosCocina/lacocina2.jpg";
 import cocina3 from "../assets/fotosCocina/lacocina3.jpg";
 import logo from "../assets/logo/Logo_ActoCero_en_blanco__1__page-0001-removebg-preview.png";
+import "../styles/index.css";
 
 function Home() {
   return (
-    <div>
+    <div className="fondo">
       <div
         id="carouselExampleControls1"
-        className="carousel slide"
+        className="carousel slide "
         data-bs-ride="carousel"
       >
         <div className="carousel-inner carouselUp">

@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import vicente from "../assets/fotosMiembros/vicho_presentacion.jpg";
 import sofia from "../assets/fotosMiembros/sofia_presentacion.jpg";
 import carla from "../assets/fotosMiembros/carla_presentacion.jpg";
+import "../styles/index.css";
+
 
 // Asegúrate de importar Bootstrap en tu archivo principal (generalmente index.js o App.js)
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,12 +17,12 @@ const Integrantes = () => {
   };
   
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0 fondo">
       <h1 className="text-center my-3">Integrantes</h1>
       <div className="d-flex justify-content-between" style={{ height: "calc(100vh - 100px)" }}>
         <button 
           className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/pagina1")}
+          onClick={() => handleNavigation("/PerfilSofia")}
           style={{ maxWidth: "33.33%" }}
         >
           <img
@@ -32,19 +34,21 @@ const Integrantes = () => {
         </button>
         <button 
           className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/pagina2")}
+          onClick={() => handleNavigation("/PerfilVicente")}
           style={{ maxWidth: "33.33%" }}
         >
+          
           <img
             src={vicente}
             alt="Integrante 2"
             className="img-fluid h-100"
             style={{ objectFit: "cover", width: "100%" }}
-          />
+            />
+            
         </button>
         <button 
           className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/pagina3")}
+          onClick={() => handleNavigation("/PerfilCarla")}
           style={{ maxWidth: "33.33%" }}
         >
           <img
