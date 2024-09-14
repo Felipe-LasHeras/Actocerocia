@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import frente from "../assets/fotosFrente/frente1.jpg";
+import frente from "../assets/fotosFrente/frente1.JPG";
 import elreloj from "../assets/fotosReloj/reloj1.jpg";
 import tiempo from "../assets/fotosTiempo/tiempo1.jpg";
 import mujeres from "../assets/fotosMujeres/mujeres3.jpg";
