@@ -8,10 +8,6 @@ import cocina from "../assets/fotosCocina/lacocina1.jpg";
 
 import "../styles/index.css";
 
-
-// Asegúrate de importar Bootstrap en tu archivo principal (generalmente index.js o App.js)
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Integrantes = () => {
   const navigate = useNavigate();
   
@@ -22,71 +18,83 @@ const Integrantes = () => {
   return (
     <div className="container-fluid p-0 fondo">
       <h1 className="text-center my-3">Obras</h1>
-      <div className="d-flex justify-content-between" style={{ height: "calc(100vh - 100px)" }}>
-        <button 
-          className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/Frenteaustedesta")}
-          style={{ maxWidth: "33.33%" }}
-        >
-          <img
-            src={frente}
-            alt="Integrante 1"
-            className="img-fluid h-100"
-            style={{ objectFit: "cover", width: "100%" }}
-          />
-        </button>
-        <button 
-          className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/elreloj")}
-          style={{ maxWidth: "33.33%" }}
-        >
-          
-          <img
-            src={elreloj}
-            alt="Integrante 2"
-            className="img-fluid h-100"
-            style={{ objectFit: "cover", width: "100%" }}
+      
+      {/* Contenedor para las imágenes */}
+      <div className="row g-3">
+        {/* Primera imagen */}
+        <div className="col-12 col-md-4">
+          <button 
+            className="btn p-0 w-100 h-100" 
+            onClick={() => handleNavigation("/Frenteaustedesta")}
+          >
+            <img
+              src={frente}
+              alt="Integrante 1"
+              className="img-fluid w-100 h-100"
+              style={{ objectFit: "cover", height: "300px" }}
             />
-            
-        </button>
-        <button 
-          className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/eltiempocamino")}
-          style={{ maxWidth: "33.33%" }}
-        >
-          <img
-            src={tiempo}
-            alt="Integrante 3"
-            className="img-fluid h-100"
-            style={{ objectFit: "cover", width: "100%" }}
-          />
-        </button>
-        <button 
-          className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/Lasmujeresdeafuera")}
-          style={{ maxWidth: "33.33%" }}
-        >
-          <img
-            src={mujeres}
-            alt="Integrante 1"
-            className="img-fluid h-100"
-            style={{ objectFit: "cover", width: "100%" }}
-          />
-        </button>
-        <button 
-          className="btn p-0 flex-grow-1" 
-          onClick={() => handleNavigation("/Lacocina")}
-          style={{ maxWidth: "33.33%" }}
-        >
-          
-          <img
-            src={cocina}
-            alt="Integrante 2"
-            className="img-fluid h-100"
-            style={{ objectFit: "cover", width: "100%" }}
+          </button>
+        </div>
+
+        {/* Segunda imagen */}
+        <div className="col-12 col-md-4">
+          <button 
+            className="btn p-0 w-100 h-100" 
+            onClick={() => handleNavigation("/elreloj")}
+          >
+            <img
+              src={elreloj}
+              alt="Integrante 2"
+              className="img-fluid w-100 h-100"
+              style={{ objectFit: "cover", height: "300px" }}
             />
-            
-        </button>
+          </button>
+        </div>
+
+        {/* Tercera imagen */}
+        <div className="col-12 col-md-4">
+          <button 
+            className="btn p-0 w-100 h-100" 
+            onClick={() => handleNavigation("/eltiempocamino")}
+          >
+            <img
+              src={tiempo}
+              alt="Integrante 3"
+              className="img-fluid w-100 h-100"
+              style={{ objectFit: "cover", height: "300px" }}
+            />
+          </button>
+        </div>
+
+        {/* Cuarta imagen */}
+        <div className="col-12 col-md-4">
+          <button 
+            className="btn p-0 w-100 h-100" 
+            onClick={() => handleNavigation("/Lasmujeresdeafuera")}
+          >
+            <img
+              src={mujeres}
+              alt="Integrante 4"
+              className="img-fluid w-100 h-100"
+              style={{ objectFit: "cover", height: "300px" }}
+            />
+          </button>
+        </div>
+
+        {/* Quinta imagen */}
+        <div className="col-12 col-md-4">
+          <button 
+            className="btn p-0 w-100 h-100" 
+            onClick={() => handleNavigation("/Lacocina")}
+          >
+            <img
+              src={cocina}
+              alt="Integrante 5"
+              className="img-fluid w-100 h-100"
+              style={{ objectFit: "cover", height: "300px" }}
+            />
+          </button>
+        </div>
       </div>
     </div>
   );
