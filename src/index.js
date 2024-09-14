@@ -12,6 +12,12 @@ import Navbar from './components/navbar';
 import PerfilVicente from './paginas/perfiles/PerfilVicente';
 import PerfilSofia from './paginas/perfiles/PerfilSofia';
 import PerfilCarla from './paginas/perfiles/PerfilCarla';
+import Obras from './paginas/obras';
+import FrenteAUstedEsta from './paginas/obras/Frenteaustedesta';
+import LaCocina from './paginas/obras/Lacocina';
+import LasMujeresDeAfuera from './paginas/obras/Lasmujeresdeafuera';
+import ElTiempoCamino from './paginas/obras/eltiempocamino';
+import RelojViejoDePared from './paginas/obras/Relojviejodepared';
 import { createGlobalStyle } from 'styled-components';
 
 // Define los estilos globales
@@ -38,6 +44,14 @@ root.render(
       <Route path="perfilvicente" element={<PerfilVicente />} />
       <Route path="perfilsofia" element={<PerfilSofia />} />
       <Route path="perfilcarla" element={<PerfilCarla />} />
+      <Route path="obras" element={<Obras />} />
+      <Route path="frenteaustedesta" element={<FrenteAUstedEsta />} />
+      <Route path="lacocina" element={<LaCocina />} />
+      <Route path="lasmujeresdeafuera" element={<LasMujeresDeAfuera />} />
+      <Route path="eltiempocamino" element={<ElTiempoCamino />} />
+      <Route path="elreloj" element={<RelojViejoDePared />} />
+
+
     </Routes>
   </BrowserRouter>
 );
