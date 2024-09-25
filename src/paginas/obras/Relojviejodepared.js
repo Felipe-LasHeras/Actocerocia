@@ -90,7 +90,7 @@ const App = () => {
               <p>
                 <p>Dramaturgia: Xabier Usabiaga</p>
               </p>
-              <p>Diseño y composición: sonora Luciano Altair</p>
+              <p>Diseño y composición: Luciano Altair</p>
               <p>Diseño escenográfico: Tomás Kipreos</p>
               <p>Diseño marote: Valentina Tapia</p>
               <p>Realización escenográfica: Elisa Modak</p>

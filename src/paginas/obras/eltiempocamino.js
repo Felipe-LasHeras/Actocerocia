@@ -22,7 +22,10 @@ const App = () => {
           <h1>El tiempo caminó</h1>
           <h5>2023</h5>
           <p>Videoclip</p>
-          <p>Videodanza para dos intérpretes, un proyector y un gran estacionamiento vacío</p>
+          <p>
+            Videodanza para dos intérpretes, un proyector y un gran
+            estacionamiento vacío
+          </p>
         </Col>
       </Row>
       <Row className="mt-3">
@@ -38,9 +41,12 @@ const App = () => {
       <Row className="mt-4">
         <Col>
           <p style={{ textAlign: "justify" }}>
-          Videoclip registrado en un estacionamiento de Centro Perdido, Santiago, Chile.
-Explora en la vivencia de dos cuerpos atravesados por historias y experiencias conjuntas a lo largo del tiempo. La coreografía dialoga a la manera de contrapunto del video proyectado en la medida en que la pareja decide entrar a esos recuerdos o bien escapar para crear otros.
-
+            Videoclip registrado en un estacionamiento de Centro Perdido,
+            Santiago, Chile. Explora en la vivencia de dos cuerpos atravesados
+            por historias y experiencias conjuntas a lo largo del tiempo. La
+            coreografía dialoga a la manera de contrapunto del video proyectado
+            en la medida en que la pareja decide entrar a esos recuerdos o bien
+            escapar para crear otros.
           </p>
           <p>Duración: 3’14</p>
           <p>Público: todo espectador</p>
@@ -71,25 +77,12 @@ Explora en la vivencia de dos cuerpos atravesados por historias y experiencias c
                 borderRadius: "5px",
               }}
             >
-              <p>Cámara y montaje 
-Camila Suazo
-</p>
+              <p>Cámara y montaje: Camila Suazo</p>
               <p>Producción: Acto Cero</p>
-              <p>Interpretación 
-Natalia Fica y Pascal Schuck
-</p>
-              <p>
-              Coreografía 
-Sofía Riveros y Carla Jimenez
-
-              </p>
-              <p>
-              Música 
-y Vicente
-
-              </p>
+              <p>Interpretación: Natalia Fica y Pascal Schuck</p>
+              <p>Coreografía: Sofía Riveros y Carla Jimenez</p>
+              <p>Música: y Vicente</p>
               <p>Idea original de Acto Cero</p>
-              
             </div>
           )}
         </Col>
@@ -120,11 +113,7 @@ y Vicente
               }}
             >
               <p>
-                Siguiendo la historia de una pareja decidida a preservar su
-                amor, la trama se desenvuelve con la metáfora de un cocinero que
-                los mantiene cautivos. Este cautiverio simboliza el amor
-                obsesivo que los mantiene presos de sí mismos, desafiando las
-                adversidades y su propia estabilidad emocional.
+                
               </p>
             </div>
           )}

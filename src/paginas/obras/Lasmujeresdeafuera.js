@@ -81,12 +81,11 @@ const App = () => {
               }}
             >
               <p>Dirección: Carla Jiménez</p>
-              <p>Producción: Acto Cero</p>
-              <p>Asistencia de Dirección: Sofía Riveros</p>
-              <p>
-                <p>Dramaturgia Xabier Usabiaga y Florencia Vila</p>
-                Interpretación: Belén Vargas Gabriela Guerra Ignacio Peralta
-              </p>
+              <p>Asistencia de dirección: Sofía Riveros</p>
+              <p>Producción: Fernanda Morales</p>
+
+              <p>Dramaturgia: Xabier Usabiaga y Florencia Vila</p>
+
               <p>Diseño y composición sonora: Vicente Larroulet</p>
               <p>
                 Realización escenográfica: Consuelo Contreras, Arte Ciento Once
@@ -145,106 +144,103 @@ const App = () => {
         </Col>
       </Row>
       {/* Botón para Curriculum */}
-      
       {/* Botón para Galería de Fotos */}
       {/* Botón para Curriculum */}
-<Row className="mt-4">
-  <Col>
-    <Button
-      onClick={() => setOpenCurriculum(!openCurriculum)}
-      style={{
-        backgroundColor: "#161616",
-        color: "white",
-        width: "100%",
-        textAlign: "left",
-        borderRadius: "5px",
-        padding: "10px",
-      }}
-    >
-      Curriculum
-    </Button>
-    {openCurriculum && (
-      <div
-        className="p-3 mt-2"
-        style={{
-          textAlign: "justify",
-          backgroundColor: "#000",
-          borderRadius: "5px",
-        }}
-      >
-        <p>
-          2021 Primer semestre. Apertura de proceso Teatro Aleph, La
-          Cisterna Segundo semestre. Estreno en Centro Cultural Espacio
-          Matta, La Granja. 2022 Funciones Teatro U Mayor 2023 Fondart
-          Circulación Nacional. Regiones de itinerancia: Metropolitana,
-          O'Higgins y Valparaíso
-        </p>
-      </div>
-    )}
-  </Col>
-</Row>
-
-{/* Botón para Galería de Fotos */}
-<Row className="mt-4">
-  <Col>
-    <Button
-      onClick={() => setOpenGaleria(!openGaleria)}
-      style={{
-        backgroundColor: "#161616",
-        color: "white",
-        width: "100%",
-        textAlign: "left",
-        borderRadius: "5px",
-        padding: "10px",
-      }}
-    >
-      Galería de Fotos
-    </Button>
-    {openGaleria && (
-      <div
-        className="p-3 mt-2"
-        style={{
-          textAlign: "justify",
-          backgroundColor: "#000",
-          borderRadius: "5px",
-        }}
-      >
-        {/* Cambiado a filas individuales para que las imágenes queden una debajo de la otra */}
-        <Row className="mb-4">
-          <Col>
-            <img
-              src={mujeres1}
-              alt="Foto 1"
-              className="img-fluid"
-              style={{ maxWidth: "100%", height: "auto" }} // Mantiene las proporciones
-            />
-          </Col>
-        </Row>
-        <Row className="mb-4">
-          <Col>
-            <img
-              src={mujeres2}
-              alt="Foto 2"
-              className="img-fluid"
-              style={{ maxWidth: "100%", height: "auto" }} // Mantiene las proporciones
-            />
-          </Col>
-        </Row>
-        <Row className="mb-4">
-          <Col>
-            <img
-              src={mujeres5}
-              alt="Foto 3"
-              className="img-fluid"
-              style={{ maxWidth: "100%", height: "auto" }} // Mantiene las proporciones
-            />
-          </Col>
-        </Row>
-      </div>
-    )}
-  </Col>
-</Row>
-
+      <Row className="mt-4">
+        <Col>
+          <Button
+            onClick={() => setOpenCurriculum(!openCurriculum)}
+            style={{
+              backgroundColor: "#161616",
+              color: "white",
+              width: "100%",
+              textAlign: "left",
+              borderRadius: "5px",
+              padding: "10px",
+            }}
+          >
+            Curriculum
+          </Button>
+          {openCurriculum && (
+            <div
+              className="p-3 mt-2"
+              style={{
+                textAlign: "justify",
+                backgroundColor: "#000",
+                borderRadius: "5px",
+              }}
+            >
+              <p>
+                2021 Primer semestre. Apertura de proceso Teatro Aleph, La
+                Cisterna Segundo semestre. Estreno en Centro Cultural Espacio
+                Matta, La Granja. 2022 Funciones Teatro U Mayor 2023 Fondart
+                Circulación Nacional. Regiones de itinerancia: Metropolitana,
+                O'Higgins y Valparaíso
+              </p>
+            </div>
+          )}
+        </Col>
+      </Row>
+      {/* Botón para Galería de Fotos */}
+      <Row className="mt-4">
+        <Col>
+          <Button
+            onClick={() => setOpenGaleria(!openGaleria)}
+            style={{
+              backgroundColor: "#161616",
+              color: "white",
+              width: "100%",
+              textAlign: "left",
+              borderRadius: "5px",
+              padding: "10px",
+            }}
+          >
+            Galería de Fotos
+          </Button>
+          {openGaleria && (
+            <div
+              className="p-3 mt-2"
+              style={{
+                textAlign: "justify",
+                backgroundColor: "#000",
+                borderRadius: "5px",
+              }}
+            >
+              {/* Cambiado a filas individuales para que las imágenes queden una debajo de la otra */}
+              <Row className="mb-4">
+                <Col>
+                  <img
+                    src={mujeres1}
+                    alt="Foto 1"
+                    className="img-fluid"
+                    style={{ maxWidth: "100%", height: "auto" }} // Mantiene las proporciones
+                  />
+                </Col>
+              </Row>
+              <Row className="mb-4">
+                <Col>
+                  <img
+                    src={mujeres2}
+                    alt="Foto 2"
+                    className="img-fluid"
+                    style={{ maxWidth: "100%", height: "auto" }} // Mantiene las proporciones
+                  />
+                </Col>
+              </Row>
+              <Row className="mb-4">
+                <Col>
+                  <img
+                    src={mujeres5}
+                    alt="Foto 3"
+                    className="img-fluid"
+                    style={{ maxWidth: "100%", height: "auto" }} // Mantiene las proporciones
+                  />
+                </Col>
+              </Row>
+            </div>
+          )}
+        </Col>
+      </Row>
     </Container>
   );
 };
