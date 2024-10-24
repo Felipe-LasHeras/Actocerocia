@@ -41,7 +41,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/contacto">
+              <Link className="nav-link text-white disabled" to="/contacto">
                 Contacto
               </Link>
             </li>
