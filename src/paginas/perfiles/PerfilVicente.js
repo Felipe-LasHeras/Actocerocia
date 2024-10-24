@@ -1,12 +1,13 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import vicente from "../../assets/fotosMiembros/vicho_presentacion.jpg";
+import instagram from "../../assets/logo/instagram.svg";
 import "../../styles/index.css";
  // Asegúrate de que la ruta a la imagen sea correcta
 
 const Biografia = () => {
   return (
-    <div className="container mt-5 text-whitefondo ">
+    <div className="container mt-5 fondo ">
       <div className="row">
         {/* Columna de texto */}
         <div className="col-md-8">
@@ -35,6 +36,24 @@ const Biografia = () => {
             de la FOJI el año 2021, estrenada meses más tarde en el Teatro
             Municipal de Las Condes y Lo Prado.
           </p>
+          <a
+            href="https://www.instagram.com/y_vicente_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="d-flex align-items-center text-white mt-3"
+          >
+            <img
+              src={instagram}
+              alt="Logo Instagram"
+              style={{
+                width: "30px",
+                height: "30px",
+                marginRight: "10px",
+                filter: "invert(100%)", // Para hacer el logo blanco si es un SVG
+              }}
+            />
+            <span>@y_vicente_</span>
+          </a>
         </div>
 
         {/* Columna de imagen */}

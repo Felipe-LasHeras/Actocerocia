@@ -1,7 +1,27 @@
+/* Definición global de fuentes */
 .app {
-  text-align: center;
   background: #000;
+  text-align: justify;
+  font-family: "Playfair Display", "Old Standard TT", serif;
 }
+
 .fondo {
   background: #000;
+}
+
+/* Asegurarse que todos los elementos de texto hereden la fuente */
+.app p,
+.app h1,
+.app h2,
+.app h3,
+.app h4,
+.app h5,
+.app h6 {
+  text-align: justify;
+  font-family: "Playfair Display", "Old Standard TT", serif;
+}
+
+/* Si quieres usar Rethink Sans para elementos específicos, puedes crear una clase */
+.rethink-font {
+  font-family: "Rethink Sans", sans-serif;
 }

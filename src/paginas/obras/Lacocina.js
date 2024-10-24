@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import cocina1 from "../../assets/fotosCocina/lacocina1.jpg"; // Ruta de tu imagen
 import cocina2 from "../../assets/fotosCocina/lacocina2.jpg"; // Ruta de tu imagen
 import cocina3 from "../../assets/fotosCocina/lacocina3.jpg"; // Ruta de tu imagen
+import cocina4 from "../../assets/fotosCocina/lacocina4.jpg"; // Ruta de tu imagen
 
 const App = () => {
   // Estados para manejar los dropdowns
@@ -29,7 +30,7 @@ const App = () => {
       <Row className="mt-3">
         <Col>
           <img
-            src={cocina3}
+            src={cocina4}
             alt="Frente a usted está"
             className="img-fluid"
             style={{ width: "100%" }}

@@ -19,6 +19,7 @@ import LasMujeresDeAfuera from './paginas/obras/Lasmujeresdeafuera';
 import ElTiempoCamino from './paginas/obras/eltiempocamino';
 import RelojViejoDePared from './paginas/obras/Relojviejodepared';
 import { createGlobalStyle } from 'styled-components';
+import BackButton from './components/backButton';
 
 // Define los estilos globales
 const GlobalStyle = createGlobalStyle`
@@ -36,6 +37,7 @@ root.render(
   <BrowserRouter>
     <GlobalStyle /> {/* Agrega GlobalStyle aquí */}
     <Navbar />
+    <BackButton />
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="home" element={<Home />} />

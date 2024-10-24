@@ -1,0 +1,33 @@
+/* Añadir a obras.css */
+.navigation-header {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.integrated-back-button {
+  position: absolute;
+  left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.integrated-back-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ajustar el título para que se mantenga centrado */
+.navigation-header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}

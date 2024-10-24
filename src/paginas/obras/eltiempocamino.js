@@ -87,69 +87,10 @@ const App = () => {
           )}
         </Col>
       </Row>
-      {/* Botón para Reseña */}
-      <Row className="mt-4">
-        <Col>
-          <Button
-            onClick={() => setOpenReseña(!openReseña)}
-            style={{
-              backgroundColor: "#161616",
-              color: "white",
-              width: "100%",
-              textAlign: "left",
-              borderRadius: "5px",
-              padding: "10px",
-            }}
-          >
-            Reseña
-          </Button>
-          {openReseña && (
-            <div
-              className="p-3 mt-2"
-              style={{
-                textAlign: "justify",
-                backgroundColor: "#000",
-                borderRadius: "5px",
-              }}
-            >
-              <p>
-                
-              </p>
-            </div>
-          )}
-        </Col>
-      </Row>
+      
       {/* Botón para Curriculum */}
       <Row className="mt-4">
         <Col>
-          <Button
-            onClick={() => setOpenCurriculum(!openCurriculum)}
-            style={{
-              backgroundColor: "#161616",
-              color: "white",
-              width: "100%",
-              textAlign: "left",
-              borderRadius: "5px",
-              padding: "10px",
-            }}
-          >
-            Curriculum
-          </Button>
-          {openCurriculum && (
-            <div
-              className="p-3 mt-2"
-              style={{
-                textAlign: "justify",
-                backgroundColor: "#000",
-                borderRadius: "5px",
-              }}
-            >
-              <p>
-                2023 Enero Estreno en Espacio La Higuera Enero Festival La
-                Cosecha (BAJ) Abril V Festival de Danza del Teatro Azares
-              </p>
-            </div>
-          )}
         </Col>
       </Row>
       {/* Botón para Galería de Fotos */}
