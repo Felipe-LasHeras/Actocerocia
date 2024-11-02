@@ -24,21 +24,17 @@ function Home() {
   const carousel1Images = [mujeresc1, relojc1, cocinac1, mujeresc2, relojc2];
   const carousel2Images = [cocinac2, mujeresc3, relojc3, cocinac3];
 
-  // Función para el cambio automático del primer carrusel
   useEffect(() => {
     const interval = setInterval(() => {
       handleCarousel1Navigation('next', new Event('auto'));
-    }, 5000); // 5 segundos
-
+    }, 5000);
     return () => clearInterval(interval);
   }, [activeIndex1]);
 
-  // Función para el cambio automático del segundo carrusel
   useEffect(() => {
     const interval = setInterval(() => {
       handleCarousel2Navigation('next', new Event('auto'));
-    }, 5000); // 5 segundos
-
+    }, 5000);
     return () => clearInterval(interval);
   }, [activeIndex2]);
 
@@ -113,62 +109,68 @@ function Home() {
 
   return (
     <div className="fondo">
-      <div className="carousel-container">
-        <div
-          id="carouselExampleControls1"
-          className="carousel slide"
-        >
-          <div className="carousel-inner carouselUp position-relative">
-            {carousel1Images.map((img, index) => (
-              <div
-                key={index}
-                className={getItemClassName(index, activeIndex1, sliding1, direction1, true)}
-              >
-                <img src={img} className="carouselUp d-block w-100" alt={`Slide ${index + 1}`} />
-              </div>
-            ))}
-            <div 
-              className="position-absolute top-0 start-0 h-100 w-50" 
-              style={{ cursor: 'pointer', zIndex: 2 }}
-              onClick={(e) => handleCarousel1Navigation('prev', e)}
-            />
-            <div 
-              className="position-absolute top-0 end-0 h-100 w-50" 
-              style={{ cursor: 'pointer', zIndex: 2 }}
-              onClick={(e) => handleCarousel1Navigation('next', e)}
-            />
+      <div className="page-container">
+        <div className="carousel-wrapper">
+          <div
+            id="carouselExampleControls1"
+            className="carousel slide"
+          >
+            <div className="carousel-inner position-relative">
+              {carousel1Images.map((img, index) => (
+                <div
+                  key={index}
+                  className={getItemClassName(index, activeIndex1, sliding1, direction1, true)}
+                >
+                  <div className="carousel-image-container">
+                    <img src={img} className="d-block w-100" alt={`Slide ${index + 1}`} />
+                  </div>
+                </div>
+              ))}
+              <div 
+                className="position-absolute top-0 start-0 h-100 w-50" 
+                style={{ cursor: 'pointer', zIndex: 2 }}
+                onClick={(e) => handleCarousel1Navigation('prev', e)}
+              />
+              <div 
+                className="position-absolute top-0 end-0 h-100 w-50" 
+                style={{ cursor: 'pointer', zIndex: 2 }}
+                onClick={(e) => handleCarousel1Navigation('next', e)}
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="logo-container logo">
-        <img src={logo} alt="Logo ActoCero" className="logo-image" />
-      </div>
+        <div className="logo-wrapper">
+          <img src={logo} alt="Logo ActoCero" className="logo-image" />
+        </div>
 
-      <div className="carousel-container">
-        <div
-          id="carouselExampleControls2"
-          className="carousel slide"
-        >
-          <div className="carousel-inner carouselUp position-relative">
-            {carousel2Images.map((img, index) => (
-              <div
-                key={index}
-                className={getItemClassName(index, activeIndex2, sliding2, direction2, false)}
-              >
-                <img src={img} className="carouselUp d-block w-100" alt={`Slide ${index + 1}`} />
-              </div>
-            ))}
-            <div 
-              className="position-absolute top-0 start-0 h-100 w-50" 
-              style={{ cursor: 'pointer', zIndex: 2 }}
-              onClick={(e) => handleCarousel2Navigation('prev', e)}
-            />
-            <div 
-              className="position-absolute top-0 end-0 h-100 w-50" 
-              style={{ cursor: 'pointer', zIndex: 2 }}
-              onClick={(e) => handleCarousel2Navigation('next', e)}
-            />
+        <div className="carousel-wrapper">
+          <div
+            id="carouselExampleControls2"
+            className="carousel slide"
+          >
+            <div className="carousel-inner position-relative">
+              {carousel2Images.map((img, index) => (
+                <div
+                  key={index}
+                  className={getItemClassName(index, activeIndex2, sliding2, direction2, false)}
+                >
+                  <div className="carousel-image-container">
+                    <img src={img} className="d-block w-100" alt={`Slide ${index + 1}`} />
+                  </div>
+                </div>
+              ))}
+              <div 
+                className="position-absolute top-0 start-0 h-100 w-50" 
+                style={{ cursor: 'pointer', zIndex: 2 }}
+                onClick={(e) => handleCarousel2Navigation('prev', e)}
+              />
+              <div 
+                className="position-absolute top-0 end-0 h-100 w-50" 
+                style={{ cursor: 'pointer', zIndex: 2 }}
+                onClick={(e) => handleCarousel2Navigation('next', e)}
+              />
+            </div>
           </div>
         </div>
       </div>

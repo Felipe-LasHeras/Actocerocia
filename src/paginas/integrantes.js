@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import vicente from "../assets/fotosMiembros/vicho_presentacion.jpg";
 import sofia from "../assets/fotosMiembros/sofia_presentacion.jpg";
@@ -7,13 +7,35 @@ import "../styles/integrantes.css";
 
 const Integrantes = () => {
   const navigate = useNavigate();
+  const [activeMember, setActiveMember] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const handleNavigation = (path) => {
-    navigate(path);
+  // Detectar si el dispositivo es móvil o si el ancho de pantalla es menor a 768px
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize(); // Ejecuta una vez al cargar el componente
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleMemberClick = (path, member) => {
+    if (isMobile) {
+      // En dispositivos móviles y tabletas
+      if (activeMember === member) {
+        navigate(path);
+      } else {
+        setActiveMember(member);
+      }
+    } else {
+      // En pantallas grandes, redirige de inmediato al hacer clic
+      navigate(path);
+    }
   };
 
   return (
-    <div className="container-fluid p-0 fondo">
+    <div className="container-fluid p-0">
       <div className="navigation-header">
         <button 
           onClick={() => navigate(-1)}
@@ -24,11 +46,10 @@ const Integrantes = () => {
         <h1 className="text-center my-3">Integrantes</h1>
       </div>
 
-      <div className="d-flex justify-content-between" style={{ height: "calc(100vh - 100px)" }}>
+      <div className="integrantes-container">
         <button 
-          className="btn p-0 flex-grow-1 integrante-container" 
-          onClick={() => handleNavigation("/PerfilSofia")}
-          style={{ maxWidth: "33.33%" }}
+          className={`btn p-0 integrante-container ${activeMember === "Sofia" ? "active" : ""}`}
+          onClick={() => handleMemberClick("/PerfilSofia", "Sofia")}
         >
           <img
             src={sofia}
@@ -46,9 +67,8 @@ const Integrantes = () => {
         </button>
 
         <button 
-          className="btn p-0 flex-grow-1 integrante-container" 
-          onClick={() => handleNavigation("/PerfilVicente")}
-          style={{ maxWidth: "33.33%" }}
+          className={`btn p-0 integrante-container ${activeMember === "Vicente" ? "active" : ""}`}
+          onClick={() => handleMemberClick("/PerfilVicente", "Vicente")}
         >
           <img
             src={vicente}
@@ -66,9 +86,8 @@ const Integrantes = () => {
         </button>
 
         <button 
-          className="btn p-0 flex-grow-1 integrante-container" 
-          onClick={() => handleNavigation("/PerfilCarla")}
-          style={{ maxWidth: "33.33%" }}
+          className={`btn p-0 integrante-container ${activeMember === "Carla" ? "active" : ""}`}
+          onClick={() => handleMemberClick("/PerfilCarla", "Carla")}
         >
           <img
             src={carla}
@@ -78,7 +97,7 @@ const Integrantes = () => {
           />
           <div className="integrante-hover-text">
             <h2 className="integrante-title">Carla</h2>
-            <p className="integrante-subtitle">Bailarina y coreógrafa</p>
+            <p className="integrante-subtitle">Actriz</p>
             <p className="ver-mas">
               Ver más <span className="arrow">→</span>
             </p>

@@ -1,4 +1,16 @@
-.presentacion
- {
+.presentacion {
   background: black;
+  padding: 20px 0;
+}
+
+.custom-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  border-radius: 10px;
+}
+
+.text-container {
+  max-width: 800px;
+  margin-top: 20px;
 }

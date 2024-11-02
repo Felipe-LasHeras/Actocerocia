@@ -11,23 +11,17 @@ function Presentacion() {
         {/* Fila del título */}
         <div className="row mb-0">
           <div className="col-12 d-flex justify-content-center">
-            <h2 className="text-center mb-0">Actocero</h2>
+            <h2 className="text-center mb-0 text-white">Actocero</h2>
           </div>
         </div>
 
         {/* Fila de la imagen */}
-        <div className="row mt-3">
+        <div className="row mt-4">
           <div className="col-12 d-flex justify-content-center">
             <img
               src={miembros}
               alt="Equipo Acto Cero"
-              className="img-fluid"
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-                maxHeight: "500px",
-                borderRadius: "10px",
-              }}
+              className="img-fluid rounded custom-img"
             />
           </div>
         </div>
@@ -35,16 +29,8 @@ function Presentacion() {
         {/* Fila del texto */}
         <div className="row mt-4">
           <div className="col-12 d-flex justify-content-center">
-            <div
-              className="text-container"
-              style={{
-                maxWidth: "800px",
-                textAlign: "justify",
-              
-                marginTop: "20px",
-              }}
-            >
-              <p>
+            <div className="text-container px-3 px-md-5">
+              <p className="text-light">
                 En Acto Cero somos una convergencia de tres mentes creativas
                 provenientes de la danza, música y teatro. Nuestro camino comienza
                 en 2020 cuando decidimos unir nuestras perspectivas y habilidades

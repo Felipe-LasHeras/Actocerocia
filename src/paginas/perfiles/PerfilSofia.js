@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import sofia from "../../assets/fotosMiembros/sofia_presentacion.jpg";
 import instagram from "../../assets/logo/instagram.svg";
 import "../../styles/index.css";
-// Asegúrate de que la ruta a la imagen sea correcta
 
 const Biografia = () => {
   return (
@@ -48,8 +47,8 @@ const Biografia = () => {
           <p>
             Directora Creativa de la Cía. Materia Lab., compañía de danza que
             entrega a estudiantes de danza un espacio de práctica escénica y una
-            vía de inserción al mundo laboral. Coreógrafa del programa “Baila
-            Fútbol” (2023-24) de la fundación Fútbol Más en colaboración con
+            vía de inserción al mundo laboral. Coreógrafa del programa "Baila
+            Fútbol" (2023-24) de la fundación Fútbol Más en colaboración con
             NTV.
           </p>
           <p>
@@ -72,7 +71,7 @@ const Biografia = () => {
                 width: "30px",
                 height: "30px",
                 marginRight: "10px",
-                filter: "invert(100%)", // Para hacer el logo blanco si es un SVG
+                filter: "invert(100%)",
               }}
             />
             <span>@sofia.ri_</span>
@@ -80,13 +79,27 @@ const Biografia = () => {
         </div>
 
         {/* Columna de imagen */}
-        <div className="col-md-4 d-flex justify-content-center">
-          <img
-            src={sofia}
-            alt="Sofía Riveros Córdova"
-            className="img-fluid rounded"
-            style={{ maxWidth: "100%", border: "2px solid white" }}
-          />
+        <div className="col-md-4 d-flex justify-content-center align-items-start">
+          <div style={{
+            width: "100%",
+            paddingBottom: "133.33%", // Proporción 3:4 común para fotos de retrato
+            position: "relative"
+          }}>
+            <img
+              src={sofia}
+              alt="Sofía Riveros Córdova"
+              className="img-fluid rounded"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: "2px solid white",
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>
