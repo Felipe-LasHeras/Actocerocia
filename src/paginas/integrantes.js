@@ -97,7 +97,7 @@ const Integrantes = () => {
           />
           <div className="integrante-hover-text">
             <h2 className="integrante-title">Carla</h2>
-            <p className="integrante-subtitle">Actriz</p>
+            <p className="integrante-subtitle">Actriz y esteta</p>
             <p className="ver-mas">
               Ver más <span className="arrow">→</span>
             </p>

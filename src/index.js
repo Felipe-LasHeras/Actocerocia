@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import App from './app';
 import './styles/index.css'; // Si ya tienes estilos globales aquí, puedes combinarlo o eliminarlos si solo usas styled-components
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollTop';
 import Home from './paginas/home';
 import Presentacion from './paginas/presentacion';
 import Integrantes from './paginas/integrantes';
@@ -36,6 +37,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <GlobalStyle /> {/* Agrega GlobalStyle aquí */}
+    <ScrollToTop />
     <Navbar />
     <BackButton />
     <Routes>
